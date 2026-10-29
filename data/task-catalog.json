@@ -1,0 +1,2431 @@
+{
+  "generatedAt": "2026-10-28T05:03:34.215Z",
+  "taskCount": 42,
+  "tasks": [
+    {
+      "id": "arrange_largest_number",
+      "key": "arrange_largest_number",
+      "name": "排列数字组成最大数",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.",
+      "skills": [
+        "排列数字组成最大数",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "arrange-largest-number.mp4",
+      "randomKey": "arrange_largest_number_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/arrange-largest-number/"
+    },
+    {
+      "id": "fold_clothes",
+      "key": "fold_clothes",
+      "name": "折叠衣物",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Fold the clothes neatly.",
+      "skills": [
+        "折叠衣物",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "fold-clothes.mp4",
+      "randomKey": "fold_clothes_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/fold-clothes/"
+    },
+    {
+      "id": "pack_objects_into_box",
+      "key": "pack_objects_into_box",
+      "name": "把物体装入盒子",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Place all the objects into the box with their front sides facing left.",
+      "skills": [
+        "把物体装入盒子",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "pack-objects-into-box.mp4",
+      "randomKey": "pack_objects_into_box_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/pack-objects-into-box/"
+    },
+    {
+      "id": "push_T",
+      "key": "push_T",
+      "name": "推动 T 形物体",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Push the T-shaped block to align it precisely with the gray T-shaped pad.",
+      "skills": [
+        "推动 T 形物体",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "push-t.mp4",
+      "randomKey": "push_T_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/push-t/"
+    },
+    {
+      "id": "store_laptop_and_headphones",
+      "key": "store_laptop_and_headphones",
+      "name": "收纳笔记本和耳机",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.",
+      "skills": [
+        "收纳笔记本和耳机",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "store-laptop-and-headphones.mp4",
+      "randomKey": "store_laptop_and_headphones_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/store-laptop-and-headphones/"
+    },
+    {
+      "id": "hang_mugs",
+      "key": "hang_mugs",
+      "name": "悬挂杯子",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Hang all the mugs on the mug rack.",
+      "skills": [
+        "悬挂杯子",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "hang-mugs.mp4",
+      "randomKey": "hang_mugs_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/hang-mugs/"
+    },
+    {
+      "id": "make_toast",
+      "key": "make_toast",
+      "name": "制作吐司",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up two slices of bread, place them into the toaster, and press the lever down.",
+      "skills": [
+        "制作吐司",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "make-toast.mp4",
+      "randomKey": "make_toast_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/make-toast/"
+    },
+    {
+      "id": "pour_liquid_into_cup",
+      "key": "pour_liquid_into_cup",
+      "name": "把液体倒入杯子",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Pour the liquid from the bottle into the cup.",
+      "skills": [
+        "把液体倒入杯子",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "pour-liquid-into-cup.mp4",
+      "randomKey": "pour_liquid_into_cup_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/pour-liquid-into-cup/"
+    },
+    {
+      "id": "sweep_blocks",
+      "key": "sweep_blocks",
+      "name": "清扫方块",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.",
+      "skills": [
+        "清扫方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "sweep-blocks.mp4",
+      "randomKey": "sweep_blocks_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/sweep-blocks/"
+    },
+    {
+      "id": "stack_blocks",
+      "key": "stack_blocks",
+      "name": "堆叠方块",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Stack the three blocks with different textures.",
+      "skills": [
+        "堆叠方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "stack-blocks.mp4",
+      "randomKey": "stack_blocks_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/stack-blocks/"
+    },
+    {
+      "id": "stack_bowls",
+      "key": "stack_bowls",
+      "name": "堆叠碗",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Stack the three bowls together.",
+      "skills": [
+        "堆叠碗",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "stack-bowls.mp4",
+      "randomKey": "stack_bowls_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/stack-bowls/"
+    },
+    {
+      "id": "sort_nesting_dolls_by_size",
+      "key": "sort_nesting_dolls_by_size",
+      "name": "按大小套娃",
+      "dim": "Generalization",
+      "tag": "随机布局",
+      "horizon": "官方任务级 horizon",
+      "req": "Arrange the five nesting dolls in a row from left to right, from smallest to largest.",
+      "skills": [
+        "按大小套娃",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "sort-nesting-dolls-by-size.mp4",
+      "randomKey": "sort_nesting_dolls_by_size_random",
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/sort-nesting-dolls-by-size/"
+    },
+    {
+      "id": "fasten_screws",
+      "key": "fasten_screws",
+      "name": "拧紧螺丝",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Insert and tighten each screw into the nut of the same color.",
+      "skills": [
+        "拧紧螺丝",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "fasten-screws.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/fasten-screws/"
+    },
+    {
+      "id": "insert_tubes",
+      "key": "insert_tubes",
+      "name": "插入管子",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Insert the three tubes into the rack one by one.",
+      "skills": [
+        "插入管子",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "insert-tubes.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/insert-tubes/"
+    },
+    {
+      "id": "plug_in_charger",
+      "key": "plug_in_charger",
+      "name": "插入充电器",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Plug the charger into the power strip.",
+      "skills": [
+        "插入充电器",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "plug-in-charger.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/plug-in-charger/"
+    },
+    {
+      "id": "pour_balls_into_vase",
+      "key": "pour_balls_into_vase",
+      "name": "把球倒入花瓶",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pour all the balls from the cup into the vase.",
+      "skills": [
+        "把球倒入花瓶",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "pour-balls-into-vase.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/pour-balls-into-vase/"
+    },
+    {
+      "id": "play_Xylophone",
+      "key": "play_Xylophone",
+      "name": "演奏木琴",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the mallet and strike all xylophone keys from left to right.",
+      "skills": [
+        "演奏木琴",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "play-xylophone.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/play-xylophone/"
+    },
+    {
+      "id": "deposit_coin",
+      "key": "deposit_coin",
+      "name": "投放硬币",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the coin from the holder and insert it precisely into the coin bank.",
+      "skills": [
+        "投放硬币",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "deposit-coin.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/deposit-coin/"
+    },
+    {
+      "id": "insert_key",
+      "key": "insert_key",
+      "name": "插入钥匙",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.",
+      "skills": [
+        "插入钥匙",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "insert-key.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/insert-key/"
+    },
+    {
+      "id": "build_tower",
+      "key": "build_tower",
+      "name": "搭建高塔",
+      "dim": "Precision",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Build a tower using the wooden blocks and wooden boards.",
+      "skills": [
+        "搭建高塔",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "build-tower.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/build-tower/"
+    },
+    {
+      "id": "put_bottles_into_dustbin",
+      "key": "put_bottles_into_dustbin",
+      "name": "把瓶子放入垃圾桶",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+      "skills": [
+        "把瓶子放入垃圾桶",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "put-bottles-into-dustbin.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/put-bottles-into-dustbin/"
+    },
+    {
+      "id": "play_tic_tac_toe",
+      "key": "play_tic_tac_toe",
+      "name": "玩井字棋",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Play tic-tac-toe as the first player and fill the board with the opponent.",
+      "skills": [
+        "玩井字棋",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "play-tic-tac-toe.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/play-tic-tac-toe/"
+    },
+    {
+      "id": "classify_objects",
+      "key": "classify_objects",
+      "name": "分类物体",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Sort the objects by category into the three baskets.",
+      "skills": [
+        "分类物体",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "classify-objects.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/classify-objects/"
+    },
+    {
+      "id": "fill_pen_holder",
+      "key": "fill_pen_holder",
+      "name": "填充笔筒",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Hold the pen holder with one hand, place all pens into it with the other hand, then put it back down.",
+      "skills": [
+        "填充笔筒",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "fill-pen-holder.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/fill-pen-holder/"
+    },
+    {
+      "id": "fill_egg_holder",
+      "key": "fill_egg_holder",
+      "name": "填充蛋托",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Place the four eggs from the basket into the egg holder, then close the lid.",
+      "skills": [
+        "填充蛋托",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "fill-egg-holder.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/fill-egg-holder/"
+    },
+    {
+      "id": "organize_table",
+      "key": "organize_table",
+      "name": "整理桌面",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Place the alarm clock on the drawer, put the figurine on the stand, place the mouse on the mouse pad, and push the keyboard into the frame.",
+      "skills": [
+        "整理桌面",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "organize-table.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/organize-table/"
+    },
+    {
+      "id": "play_stacking_toy",
+      "key": "play_stacking_toy",
+      "name": "操作堆叠玩具",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Place all stacking toy pieces onto the correct pegs.",
+      "skills": [
+        "操作堆叠玩具",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "play-stacking-toy.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/play-stacking-toy/"
+    },
+    {
+      "id": "make_kong",
+      "key": "make_kong",
+      "name": "制作纸艺物体",
+      "dim": "Long-Horizon",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Wait for the opponent to discard a tile, then declare a kong with the matching tiles.",
+      "skills": [
+        "制作纸艺物体",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "make-kong.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/make-kong/"
+    },
+    {
+      "id": "cover_blocks",
+      "key": "cover_blocks",
+      "name": "覆盖方块",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Cover the blocks from left to right, remember their colors, then uncover them in the order: red, green, and blue.",
+      "skills": [
+        "覆盖方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "cover-blocks.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/cover-blocks/"
+    },
+    {
+      "id": "match_and_pick_from_conveyor",
+      "key": "match_and_pick_from_conveyor",
+      "name": "传送带匹配抓取",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Remember the first object on the conveyor, then pick the matching object when it appears again.",
+      "skills": [
+        "传送带匹配抓取",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "match-and-pick-from-conveyor.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/match-and-pick-from-conveyor/"
+    },
+    {
+      "id": "swap_T",
+      "key": "swap_T",
+      "name": "交换 T 形物体",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.",
+      "skills": [
+        "交换 T 形物体",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "swap-t.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/swap-t/"
+    },
+    {
+      "id": "press_by_number",
+      "key": "press_by_number",
+      "name": "按数字按压",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.",
+      "skills": [
+        "按数字按压",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "press-by-number.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/press-by-number/"
+    },
+    {
+      "id": "imitate_sorting_sequence",
+      "key": "imitate_sorting_sequence",
+      "name": "模仿排序序列",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.",
+      "skills": [
+        "模仿排序序列",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "imitate-sorting-sequence.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/imitate-sorting-sequence/"
+    },
+    {
+      "id": "swap_blocks",
+      "key": "swap_blocks",
+      "name": "交换方块",
+      "dim": "Memory",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Swap the two blocks using the empty mat, pressing the button after each move.",
+      "skills": [
+        "交换方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "swap-blocks.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/swap-blocks/"
+    },
+    {
+      "id": "align_blocks",
+      "key": "align_blocks",
+      "name": "对齐方块",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Use the set square to push the three blocks into a straight, aligned row, then reset the robot arm.",
+      "skills": [
+        "对齐方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "align-blocks.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/align-blocks/"
+    },
+    {
+      "id": "solve_equation",
+      "key": "solve_equation",
+      "name": "解方程",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Complete the equation by selecting the correct missing number or operator and placing it on the pad, then reset the robot arm.",
+      "skills": [
+        "解方程",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "solve-equation.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/solve-equation/"
+    },
+    {
+      "id": "stack_blocks_by_language",
+      "key": "stack_blocks_by_language",
+      "name": "按语言堆叠方块",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "block_0",
+      "skills": [
+        "按语言堆叠方块",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "stack-blocks-by-language.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/stack-blocks-by-language/"
+    },
+    {
+      "id": "general_pickup",
+      "key": "general_pickup",
+      "name": "通用抓取",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Pick up the <target> by 10 cm.",
+      "skills": [
+        "通用抓取",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "general-pickup.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/general-pickup/"
+    },
+    {
+      "id": "classify_objects_by_language",
+      "key": "classify_objects_by_language",
+      "name": "按语言分类",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "cat0",
+      "skills": [
+        "按语言分类",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "classify-objects-by-language.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/classify-objects-by-language/"
+    },
+    {
+      "id": "pick_from_conveyor_by_image",
+      "key": "pick_from_conveyor_by_image",
+      "name": "按图像从传送带抓取",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Lift the basket more than 8 cm, identify the target object on the conveyor according to the image on the board, pick it up, and place it into the basket.",
+      "skills": [
+        "按图像从传送带抓取",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "pick-from-conveyor-by-image.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/pick-from-conveyor-by-image/"
+    },
+    {
+      "id": "store_tools_in_toolbox",
+      "key": "store_tools_in_toolbox",
+      "name": "把工具收进工具箱",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "Place each tool into its matching position in the toolbox, then reset the robot arm.",
+      "skills": [
+        "把工具收进工具箱",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "store-tools-in-toolbox.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/store-tools-in-toolbox/"
+    },
+    {
+      "id": "pour_by_language",
+      "key": "pour_by_language",
+      "name": "按语言倒液体",
+      "dim": "Open",
+      "tag": "官方任务",
+      "horizon": "官方任务级 horizon",
+      "req": "bottle_0",
+      "skills": [
+        "按语言倒液体",
+        "多视角 RGB 观测",
+        "动作后检查与复位"
+      ],
+      "video": "pour-by-language.mp4",
+      "randomKey": null,
+      "official": "https://robodojo-benchmark.com/doc/sim-tasks/pour-by-language/"
+    }
+  ],
+  "scores": {
+    "GO-3 Nano Preview": {
+      "arrange_largest_number": [
+        82.6,
+        76
+      ],
+      "fold_clothes": [
+        66.4,
+        60
+      ],
+      "pack_objects_into_box": [
+        8.6,
+        0
+      ],
+      "push_T": [
+        72,
+        72
+      ],
+      "store_laptop_and_headphones": [
+        6.4,
+        0
+      ],
+      "hang_mugs": [
+        3,
+        0
+      ],
+      "make_toast": [
+        3,
+        0
+      ],
+      "pour_liquid_into_cup": [
+        36,
+        36
+      ],
+      "sweep_blocks": [
+        0,
+        0
+      ],
+      "stack_blocks": [
+        100,
+        100
+      ],
+      "stack_bowls": [
+        93.2,
+        92
+      ],
+      "sort_nesting_dolls_by_size": [
+        80,
+        80
+      ],
+      "fasten_screws": [
+        96.4,
+        94
+      ],
+      "insert_tubes": [
+        95.2,
+        92
+      ],
+      "plug_in_charger": [
+        70,
+        70
+      ],
+      "pour_balls_into_vase": [
+        72,
+        72
+      ],
+      "play_Xylophone": [
+        100,
+        100
+      ],
+      "deposit_coin": [
+        54,
+        48
+      ],
+      "insert_key": [
+        41.6,
+        32
+      ],
+      "build_tower": [
+        100,
+        100
+      ],
+      "put_bottles_into_dustbin": [
+        90.4,
+        84
+      ],
+      "play_tic_tac_toe": [
+        100,
+        100
+      ],
+      "classify_objects": [
+        79.7,
+        72
+      ],
+      "fill_pen_holder": [
+        17.8,
+        4
+      ],
+      "fill_egg_holder": [
+        5.4,
+        0
+      ],
+      "organize_table": [
+        74,
+        16
+      ],
+      "play_stacking_toy": [
+        78.4,
+        52
+      ],
+      "make_kong": [
+        100,
+        100
+      ],
+      "cover_blocks": [
+        100,
+        100
+      ],
+      "match_and_pick_from_conveyor": [
+        28,
+        28
+      ],
+      "swap_T": [
+        96,
+        96
+      ],
+      "press_by_number": [
+        100,
+        100
+      ],
+      "imitate_sorting_sequence": [
+        27,
+        22
+      ],
+      "swap_blocks": [
+        36,
+        36
+      ],
+      "align_blocks": [
+        88,
+        88
+      ],
+      "solve_equation": [
+        82,
+        82
+      ],
+      "stack_blocks_by_language": [
+        81.6,
+        80
+      ],
+      "general_pickup": [
+        16,
+        16
+      ],
+      "classify_objects_by_language": [
+        74.6,
+        66
+      ],
+      "pick_from_conveyor_by_image": [
+        0,
+        0
+      ],
+      "store_tools_in_toolbox": [
+        51.5,
+        10
+      ],
+      "pour_by_language": [
+        100,
+        100
+      ],
+      "arrange_largest_number_random": [
+        53,
+        48
+      ],
+      "fold_clothes_random": [
+        42.4,
+        32
+      ],
+      "pack_objects_into_box_random": [
+        3.8,
+        0
+      ],
+      "push_T_random": [
+        64,
+        64
+      ],
+      "store_laptop_and_headphones_random": [
+        1.6,
+        0
+      ],
+      "hang_mugs_random": [
+        1.2,
+        0
+      ],
+      "make_toast_random": [
+        3,
+        0
+      ],
+      "pour_liquid_into_cup_random": [
+        4,
+        4
+      ],
+      "sweep_blocks_random": [
+        0,
+        0
+      ],
+      "stack_blocks_random": [
+        79.6,
+        76
+      ],
+      "stack_bowls_random": [
+        63,
+        60
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        8,
+        8
+      ]
+    },
+    "PyRUA-Lean": {
+      "arrange_largest_number": [
+        83.8,
+        80
+      ],
+      "fold_clothes": [
+        58.4,
+        52
+      ],
+      "pack_objects_into_box": [
+        52.8,
+        40
+      ],
+      "push_T": [
+        80,
+        80
+      ],
+      "store_laptop_and_headphones": [
+        3.2,
+        0
+      ],
+      "hang_mugs": [
+        27,
+        4
+      ],
+      "make_toast": [
+        26,
+        16
+      ],
+      "pour_liquid_into_cup": [
+        4,
+        4
+      ],
+      "sweep_blocks": [
+        4,
+        4
+      ],
+      "stack_blocks": [
+        100,
+        100
+      ],
+      "stack_bowls": [
+        82.4,
+        80
+      ],
+      "sort_nesting_dolls_by_size": [
+        84,
+        84
+      ],
+      "fasten_screws": [
+        80.6,
+        68
+      ],
+      "insert_tubes": [
+        66.4,
+        50
+      ],
+      "plug_in_charger": [
+        16,
+        16
+      ],
+      "pour_balls_into_vase": [
+        66,
+        66
+      ],
+      "play_Xylophone": [
+        62,
+        62
+      ],
+      "deposit_coin": [
+        44,
+        40
+      ],
+      "insert_key": [
+        0,
+        0
+      ],
+      "build_tower": [
+        23.2,
+        4
+      ],
+      "put_bottles_into_dustbin": [
+        92.2,
+        88
+      ],
+      "play_tic_tac_toe": [
+        97.2,
+        94
+      ],
+      "classify_objects": [
+        97.1,
+        96
+      ],
+      "fill_pen_holder": [
+        23.5,
+        8
+      ],
+      "fill_egg_holder": [
+        21.2,
+        6
+      ],
+      "organize_table": [
+        25,
+        4
+      ],
+      "play_stacking_toy": [
+        78.2,
+        54
+      ],
+      "make_kong": [
+        0,
+        0
+      ],
+      "cover_blocks": [
+        100,
+        100
+      ],
+      "match_and_pick_from_conveyor": [
+        86,
+        86
+      ],
+      "swap_T": [
+        92,
+        92
+      ],
+      "press_by_number": [
+        0,
+        0
+      ],
+      "imitate_sorting_sequence": [
+        92.4,
+        92
+      ],
+      "swap_blocks": [
+        40,
+        40
+      ],
+      "align_blocks": [
+        76,
+        76
+      ],
+      "solve_equation": [
+        72,
+        72
+      ],
+      "stack_blocks_by_language": [
+        100,
+        100
+      ],
+      "general_pickup": [
+        86,
+        86
+      ],
+      "classify_objects_by_language": [
+        94.6,
+        92
+      ],
+      "pick_from_conveyor_by_image": [
+        22,
+        22
+      ],
+      "store_tools_in_toolbox": [
+        15.5,
+        0
+      ],
+      "pour_by_language": [
+        18.4,
+        18
+      ],
+      "arrange_largest_number_random": [
+        76.4,
+        68
+      ],
+      "fold_clothes_random": [
+        60,
+        52
+      ],
+      "pack_objects_into_box_random": [
+        39.2,
+        20
+      ],
+      "push_T_random": [
+        92,
+        92
+      ],
+      "store_laptop_and_headphones_random": [
+        6.4,
+        0
+      ],
+      "hang_mugs_random": [
+        28.4,
+        20
+      ],
+      "make_toast_random": [
+        17,
+        12
+      ],
+      "pour_liquid_into_cup_random": [
+        4,
+        4
+      ],
+      "sweep_blocks_random": [
+        8,
+        8
+      ],
+      "stack_blocks_random": [
+        100,
+        100
+      ],
+      "stack_bowls_random": [
+        65.4,
+        60
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        56,
+        56
+      ]
+    },
+    "HexaShell-Preview": {
+      "arrange_largest_number": [
+        17.8,
+        12
+      ],
+      "fold_clothes": [
+        64,
+        56
+      ],
+      "pack_objects_into_box": [
+        38.4,
+        20
+      ],
+      "push_T": [
+        100,
+        100
+      ],
+      "store_laptop_and_headphones": [
+        8,
+        0
+      ],
+      "hang_mugs": [
+        22.4,
+        4
+      ],
+      "make_toast": [
+        3,
+        0
+      ],
+      "pour_liquid_into_cup": [
+        4,
+        4
+      ],
+      "sweep_blocks": [
+        8,
+        8
+      ],
+      "stack_blocks": [
+        89.8,
+        88
+      ],
+      "stack_bowls": [
+        92,
+        92
+      ],
+      "sort_nesting_dolls_by_size": [
+        72,
+        72
+      ],
+      "fasten_screws": [
+        29.8,
+        18
+      ],
+      "insert_tubes": [
+        40.8,
+        22
+      ],
+      "plug_in_charger": [
+        32,
+        32
+      ],
+      "pour_balls_into_vase": [
+        80,
+        80
+      ],
+      "play_Xylophone": [
+        58,
+        58
+      ],
+      "deposit_coin": [
+        26.4,
+        16
+      ],
+      "insert_key": [
+        15,
+        0
+      ],
+      "build_tower": [
+        48,
+        30
+      ],
+      "put_bottles_into_dustbin": [
+        70.5,
+        58
+      ],
+      "play_tic_tac_toe": [
+        99,
+        96
+      ],
+      "classify_objects": [
+        85.3,
+        78
+      ],
+      "fill_pen_holder": [
+        6.1,
+        0
+      ],
+      "fill_egg_holder": [
+        8.8,
+        0
+      ],
+      "organize_table": [
+        14,
+        0
+      ],
+      "play_stacking_toy": [
+        57.6,
+        18
+      ],
+      "make_kong": [
+        2,
+        2
+      ],
+      "cover_blocks": [
+        100,
+        100
+      ],
+      "match_and_pick_from_conveyor": [
+        74,
+        74
+      ],
+      "swap_T": [
+        96,
+        96
+      ],
+      "press_by_number": [
+        96,
+        96
+      ],
+      "imitate_sorting_sequence": [
+        63.2,
+        42
+      ],
+      "swap_blocks": [
+        78,
+        78
+      ],
+      "align_blocks": [
+        78,
+        78
+      ],
+      "solve_equation": [
+        86,
+        86
+      ],
+      "stack_blocks_by_language": [
+        96.4,
+        96
+      ],
+      "general_pickup": [
+        82,
+        82
+      ],
+      "classify_objects_by_language": [
+        79.4,
+        72
+      ],
+      "pick_from_conveyor_by_image": [
+        28,
+        28
+      ],
+      "store_tools_in_toolbox": [
+        14,
+        0
+      ],
+      "pour_by_language": [
+        0,
+        0
+      ],
+      "arrange_largest_number_random": [
+        42.6,
+        32
+      ],
+      "fold_clothes_random": [
+        31.2,
+        24
+      ],
+      "pack_objects_into_box_random": [
+        27.8,
+        12
+      ],
+      "push_T_random": [
+        92,
+        92
+      ],
+      "store_laptop_and_headphones_random": [
+        1.6,
+        0
+      ],
+      "hang_mugs_random": [
+        15.6,
+        4
+      ],
+      "make_toast_random": [
+        0,
+        0
+      ],
+      "pour_liquid_into_cup_random": [
+        0,
+        0
+      ],
+      "sweep_blocks_random": [
+        8,
+        8
+      ],
+      "stack_blocks_random": [
+        89.2,
+        88
+      ],
+      "stack_bowls_random": [
+        81.8,
+        80
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        32,
+        32
+      ]
+    },
+    "WorldScape-R²SI": {
+      "arrange_largest_number": [
+        77.4,
+        72
+      ],
+      "fold_clothes": [
+        68.8,
+        68
+      ],
+      "pack_objects_into_box": [
+        27.4,
+        0
+      ],
+      "push_T": [
+        84,
+        84
+      ],
+      "store_laptop_and_headphones": [
+        56,
+        32
+      ],
+      "hang_mugs": [
+        6.4,
+        0
+      ],
+      "make_toast": [
+        50,
+        44
+      ],
+      "pour_liquid_into_cup": [
+        8,
+        8
+      ],
+      "sweep_blocks": [
+        0,
+        0
+      ],
+      "stack_blocks": [
+        86.4,
+        84
+      ],
+      "stack_bowls": [
+        79,
+        76
+      ],
+      "sort_nesting_dolls_by_size": [
+        16,
+        16
+      ],
+      "fasten_screws": [
+        35.4,
+        14
+      ],
+      "insert_tubes": [
+        11.6,
+        2
+      ],
+      "plug_in_charger": [
+        20,
+        20
+      ],
+      "pour_balls_into_vase": [
+        42,
+        42
+      ],
+      "play_Xylophone": [
+        10,
+        10
+      ],
+      "deposit_coin": [
+        7.6,
+        0
+      ],
+      "insert_key": [
+        9.9,
+        0
+      ],
+      "build_tower": [
+        51.6,
+        36
+      ],
+      "put_bottles_into_dustbin": [
+        98.8,
+        98
+      ],
+      "play_tic_tac_toe": [
+        72.9,
+        30
+      ],
+      "classify_objects": [
+        91.9,
+        90
+      ],
+      "fill_pen_holder": [
+        32.3,
+        8
+      ],
+      "fill_egg_holder": [
+        17.2,
+        2
+      ],
+      "organize_table": [
+        61.5,
+        22
+      ],
+      "play_stacking_toy": [
+        13.2,
+        0
+      ],
+      "make_kong": [
+        24,
+        24
+      ],
+      "cover_blocks": [
+        98.6,
+        98
+      ],
+      "match_and_pick_from_conveyor": [
+        78,
+        78
+      ],
+      "swap_T": [
+        20,
+        20
+      ],
+      "press_by_number": [
+        80,
+        80
+      ],
+      "imitate_sorting_sequence": [
+        44.1,
+        32
+      ],
+      "swap_blocks": [
+        74,
+        74
+      ],
+      "align_blocks": [
+        96,
+        96
+      ],
+      "solve_equation": [
+        66,
+        66
+      ],
+      "stack_blocks_by_language": [
+        78,
+        74
+      ],
+      "general_pickup": [
+        86,
+        86
+      ],
+      "classify_objects_by_language": [
+        66.8,
+        58
+      ],
+      "pick_from_conveyor_by_image": [
+        0,
+        0
+      ],
+      "store_tools_in_toolbox": [
+        0.5,
+        0
+      ],
+      "pour_by_language": [
+        0,
+        0
+      ],
+      "arrange_largest_number_random": [
+        64.6,
+        52
+      ],
+      "fold_clothes_random": [
+        62.4,
+        56
+      ],
+      "pack_objects_into_box_random": [
+        35.6,
+        8
+      ],
+      "push_T_random": [
+        80,
+        80
+      ],
+      "store_laptop_and_headphones_random": [
+        50.4,
+        28
+      ],
+      "hang_mugs_random": [
+        3.4,
+        0
+      ],
+      "make_toast_random": [
+        25,
+        8
+      ],
+      "pour_liquid_into_cup_random": [
+        0,
+        0
+      ],
+      "sweep_blocks_random": [
+        0,
+        0
+      ],
+      "stack_blocks_random": [
+        71.6,
+        68
+      ],
+      "stack_bowls_random": [
+        78.4,
+        76
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        0,
+        0
+      ]
+    },
+    "EmbodiedEvo": {
+      "arrange_largest_number": [
+        52.6,
+        36
+      ],
+      "fold_clothes": [
+        80,
+        76
+      ],
+      "pack_objects_into_box": [
+        10.6,
+        0
+      ],
+      "push_T": [
+        84,
+        84
+      ],
+      "store_laptop_and_headphones": [
+        2.4,
+        0
+      ],
+      "hang_mugs": [
+        7.4,
+        0
+      ],
+      "make_toast": [
+        4,
+        4
+      ],
+      "pour_liquid_into_cup": [
+        20,
+        20
+      ],
+      "sweep_blocks": [
+        4,
+        4
+      ],
+      "stack_blocks": [
+        68.8,
+        64
+      ],
+      "stack_bowls": [
+        60.8,
+        56
+      ],
+      "sort_nesting_dolls_by_size": [
+        20,
+        20
+      ],
+      "fasten_screws": [
+        55.6,
+        38
+      ],
+      "insert_tubes": [
+        46,
+        32
+      ],
+      "plug_in_charger": [
+        6,
+        6
+      ],
+      "pour_balls_into_vase": [
+        22,
+        22
+      ],
+      "play_Xylophone": [
+        10,
+        10
+      ],
+      "deposit_coin": [
+        37.6,
+        22
+      ],
+      "insert_key": [
+        15,
+        0
+      ],
+      "build_tower": [
+        9,
+        0
+      ],
+      "put_bottles_into_dustbin": [
+        71.2,
+        56
+      ],
+      "play_tic_tac_toe": [
+        100,
+        100
+      ],
+      "classify_objects": [
+        35.5,
+        16
+      ],
+      "fill_pen_holder": [
+        0.9,
+        0
+      ],
+      "fill_egg_holder": [
+        15.8,
+        0
+      ],
+      "organize_table": [
+        35,
+        2
+      ],
+      "play_stacking_toy": [
+        12.2,
+        0
+      ],
+      "make_kong": [
+        0,
+        0
+      ],
+      "cover_blocks": [
+        84.6,
+        84
+      ],
+      "match_and_pick_from_conveyor": [
+        60,
+        60
+      ],
+      "swap_T": [
+        88,
+        88
+      ],
+      "press_by_number": [
+        88,
+        88
+      ],
+      "imitate_sorting_sequence": [
+        75.8,
+        60
+      ],
+      "swap_blocks": [
+        80,
+        80
+      ],
+      "align_blocks": [
+        98,
+        98
+      ],
+      "solve_equation": [
+        70,
+        70
+      ],
+      "stack_blocks_by_language": [
+        51.6,
+        50
+      ],
+      "general_pickup": [
+        84,
+        84
+      ],
+      "classify_objects_by_language": [
+        58,
+        40
+      ],
+      "pick_from_conveyor_by_image": [
+        52,
+        52
+      ],
+      "store_tools_in_toolbox": [
+        0.5,
+        0
+      ],
+      "pour_by_language": [
+        0.4,
+        0
+      ],
+      "arrange_largest_number_random": [
+        44,
+        28
+      ],
+      "fold_clothes_random": [
+        90.4,
+        88
+      ],
+      "pack_objects_into_box_random": [
+        17.6,
+        0
+      ],
+      "push_T_random": [
+        88,
+        88
+      ],
+      "store_laptop_and_headphones_random": [
+        3.2,
+        0
+      ],
+      "hang_mugs_random": [
+        6.8,
+        0
+      ],
+      "make_toast_random": [
+        6,
+        4
+      ],
+      "pour_liquid_into_cup_random": [
+        32,
+        32
+      ],
+      "sweep_blocks_random": [
+        0,
+        0
+      ],
+      "stack_blocks_random": [
+        75.6,
+        72
+      ],
+      "stack_bowls_random": [
+        59,
+        56
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        8,
+        8
+      ]
+    },
+    "GPT-6 Astra": {
+      "arrange_largest_number": [
+        76,
+        68
+      ],
+      "fold_clothes": [
+        76.8,
+        72
+      ],
+      "pack_objects_into_box": [
+        11,
+        0
+      ],
+      "push_T": [
+        68,
+        68
+      ],
+      "store_laptop_and_headphones": [
+        0.8,
+        0
+      ],
+      "hang_mugs": [
+        0.6,
+        0
+      ],
+      "make_toast": [
+        0,
+        0
+      ],
+      "pour_liquid_into_cup": [
+        8,
+        8
+      ],
+      "sweep_blocks": [
+        8,
+        8
+      ],
+      "stack_blocks": [
+        89.8,
+        88
+      ],
+      "stack_bowls": [
+        68.8,
+        64
+      ],
+      "sort_nesting_dolls_by_size": [
+        16,
+        16
+      ],
+      "fasten_screws": [
+        36.4,
+        16
+      ],
+      "insert_tubes": [
+        6,
+        0
+      ],
+      "plug_in_charger": [
+        0,
+        0
+      ],
+      "pour_balls_into_vase": [
+        4,
+        4
+      ],
+      "play_Xylophone": [
+        8,
+        8
+      ],
+      "deposit_coin": [
+        16,
+        2
+      ],
+      "insert_key": [
+        14.4,
+        0
+      ],
+      "build_tower": [
+        16.4,
+        2
+      ],
+      "put_bottles_into_dustbin": [
+        35.3,
+        10
+      ],
+      "play_tic_tac_toe": [
+        10.7,
+        0
+      ],
+      "classify_objects": [
+        69,
+        56
+      ],
+      "fill_pen_holder": [
+        5,
+        0
+      ],
+      "fill_egg_holder": [
+        5.5,
+        0
+      ],
+      "organize_table": [
+        39.5,
+        0
+      ],
+      "play_stacking_toy": [
+        6.6,
+        0
+      ],
+      "make_kong": [
+        0,
+        0
+      ],
+      "cover_blocks": [
+        49.3,
+        46
+      ],
+      "match_and_pick_from_conveyor": [
+        62,
+        62
+      ],
+      "swap_T": [
+        18,
+        18
+      ],
+      "press_by_number": [
+        70,
+        70
+      ],
+      "imitate_sorting_sequence": [
+        58.9,
+        36
+      ],
+      "swap_blocks": [
+        0,
+        0
+      ],
+      "align_blocks": [
+        50,
+        50
+      ],
+      "solve_equation": [
+        40,
+        40
+      ],
+      "stack_blocks_by_language": [
+        48,
+        40
+      ],
+      "general_pickup": [
+        84,
+        84
+      ],
+      "classify_objects_by_language": [
+        46,
+        30
+      ],
+      "pick_from_conveyor_by_image": [
+        4,
+        4
+      ],
+      "store_tools_in_toolbox": [
+        2.5,
+        0
+      ],
+      "pour_by_language": [
+        0.4,
+        0
+      ],
+      "arrange_largest_number_random": [
+        61.4,
+        52
+      ],
+      "fold_clothes_random": [
+        76,
+        72
+      ],
+      "pack_objects_into_box_random": [
+        12.2,
+        0
+      ],
+      "push_T_random": [
+        52,
+        52
+      ],
+      "store_laptop_and_headphones_random": [
+        2.4,
+        0
+      ],
+      "hang_mugs_random": [
+        1.2,
+        0
+      ],
+      "make_toast_random": [
+        1,
+        0
+      ],
+      "pour_liquid_into_cup_random": [
+        0,
+        0
+      ],
+      "sweep_blocks_random": [
+        0,
+        0
+      ],
+      "stack_blocks_random": [
+        86.4,
+        84
+      ],
+      "stack_bowls_random": [
+        64.2,
+        60
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        20,
+        20
+      ]
+    },
+    "DeepSeek-Flash": {
+      "arrange_largest_number": [
+        0.5,
+        0
+      ],
+      "fold_clothes": [
+        2,
+        0
+      ],
+      "pack_objects_into_box": [
+        2,
+        0
+      ],
+      "push_T": [
+        0,
+        0
+      ],
+      "store_laptop_and_headphones": [
+        0,
+        0
+      ],
+      "hang_mugs": [
+        0,
+        0
+      ],
+      "make_toast": [
+        0,
+        0
+      ],
+      "pour_liquid_into_cup": [
+        0,
+        0
+      ],
+      "sweep_blocks": [
+        0,
+        0
+      ],
+      "stack_blocks": [
+        21.5,
+        20
+      ],
+      "stack_bowls": [
+        3,
+        0
+      ],
+      "sort_nesting_dolls_by_size": [
+        0,
+        0
+      ],
+      "fasten_screws": [
+        2,
+        0
+      ],
+      "insert_tubes": [
+        0,
+        0
+      ],
+      "plug_in_charger": [
+        0,
+        0
+      ],
+      "pour_balls_into_vase": [
+        0,
+        0
+      ],
+      "play_Xylophone": [
+        0,
+        0
+      ],
+      "deposit_coin": [
+        4,
+        0
+      ],
+      "insert_key": [
+        6,
+        0
+      ],
+      "build_tower": [
+        2,
+        0
+      ],
+      "put_bottles_into_dustbin": [
+        2,
+        0
+      ],
+      "play_tic_tac_toe": [
+        5,
+        0
+      ],
+      "classify_objects": [
+        3,
+        0
+      ],
+      "fill_pen_holder": [
+        0,
+        0
+      ],
+      "fill_egg_holder": [
+        2,
+        0
+      ],
+      "organize_table": [
+        5,
+        0
+      ],
+      "play_stacking_toy": [
+        0,
+        0
+      ],
+      "make_kong": [
+        0,
+        0
+      ],
+      "cover_blocks": [
+        3,
+        0
+      ],
+      "match_and_pick_from_conveyor": [
+        10,
+        10
+      ],
+      "swap_T": [
+        0,
+        0
+      ],
+      "press_by_number": [
+        0,
+        0
+      ],
+      "imitate_sorting_sequence": [
+        0,
+        0
+      ],
+      "swap_blocks": [
+        0,
+        0
+      ],
+      "align_blocks": [
+        20,
+        20
+      ],
+      "solve_equation": [
+        0,
+        0
+      ],
+      "stack_blocks_by_language": [
+        2,
+        0
+      ],
+      "general_pickup": [
+        30,
+        30
+      ],
+      "classify_objects_by_language": [
+        0,
+        0
+      ],
+      "pick_from_conveyor_by_image": [
+        0,
+        0
+      ],
+      "store_tools_in_toolbox": [
+        0,
+        0
+      ],
+      "pour_by_language": [
+        0,
+        0
+      ],
+      "arrange_largest_number_random": null,
+      "fold_clothes_random": null,
+      "pack_objects_into_box_random": null,
+      "push_T_random": null,
+      "store_laptop_and_headphones_random": null,
+      "hang_mugs_random": null,
+      "make_toast_random": null,
+      "pour_liquid_into_cup_random": null,
+      "sweep_blocks_random": null,
+      "stack_blocks_random": null,
+      "stack_bowls_random": null,
+      "sort_nesting_dolls_by_size_random": null
+    },
+    "GPT-5.5": {
+      "arrange_largest_number": [
+        0,
+        0
+      ],
+      "fold_clothes": [
+        0.8,
+        0
+      ],
+      "pack_objects_into_box": [
+        0,
+        0
+      ],
+      "push_T": [
+        0,
+        0
+      ],
+      "store_laptop_and_headphones": [
+        0,
+        0
+      ],
+      "hang_mugs": [
+        0,
+        0
+      ],
+      "make_toast": [
+        0,
+        0
+      ],
+      "pour_liquid_into_cup": [
+        0,
+        0
+      ],
+      "sweep_blocks": [
+        0,
+        0
+      ],
+      "stack_blocks": [
+        0.6,
+        0
+      ],
+      "stack_bowls": [
+        0.6,
+        0
+      ],
+      "sort_nesting_dolls_by_size": [
+        0,
+        0
+      ],
+      "fasten_screws": [
+        0,
+        0
+      ],
+      "insert_tubes": [
+        0,
+        0
+      ],
+      "plug_in_charger": [
+        0,
+        0
+      ],
+      "pour_balls_into_vase": [
+        0,
+        0
+      ],
+      "play_Xylophone": [
+        0,
+        0
+      ],
+      "deposit_coin": [
+        1.6,
+        0
+      ],
+      "insert_key": [
+        1.8,
+        0
+      ],
+      "build_tower": [
+        0,
+        0
+      ],
+      "put_bottles_into_dustbin": [
+        1.3,
+        0
+      ],
+      "play_tic_tac_toe": [
+        0.8,
+        0
+      ],
+      "classify_objects": [
+        0.3,
+        0
+      ],
+      "fill_pen_holder": [
+        0,
+        0
+      ],
+      "fill_egg_holder": [
+        0.2,
+        0
+      ],
+      "organize_table": [
+        1.5,
+        0
+      ],
+      "play_stacking_toy": [
+        0,
+        0
+      ],
+      "make_kong": [
+        0,
+        0
+      ],
+      "cover_blocks": [
+        0,
+        0
+      ],
+      "match_and_pick_from_conveyor": [
+        10,
+        10
+      ],
+      "swap_T": [
+        0,
+        0
+      ],
+      "press_by_number": [
+        0,
+        0
+      ],
+      "imitate_sorting_sequence": [
+        0,
+        0
+      ],
+      "swap_blocks": [
+        0,
+        0
+      ],
+      "align_blocks": [
+        0,
+        0
+      ],
+      "solve_equation": [
+        2,
+        2
+      ],
+      "stack_blocks_by_language": [
+        0.8,
+        0
+      ],
+      "general_pickup": [
+        20,
+        20
+      ],
+      "classify_objects_by_language": [
+        0.2,
+        0
+      ],
+      "pick_from_conveyor_by_image": [
+        0,
+        0
+      ],
+      "store_tools_in_toolbox": [
+        0,
+        0
+      ],
+      "pour_by_language": [
+        0,
+        0
+      ],
+      "arrange_largest_number_random": [
+        0,
+        0
+      ],
+      "fold_clothes_random": [
+        1.6,
+        0
+      ],
+      "pack_objects_into_box_random": [
+        0.4,
+        0
+      ],
+      "push_T_random": [
+        0,
+        0
+      ],
+      "store_laptop_and_headphones_random": [
+        0,
+        0
+      ],
+      "hang_mugs_random": [
+        0,
+        0
+      ],
+      "make_toast_random": [
+        0,
+        0
+      ],
+      "pour_liquid_into_cup_random": [
+        0,
+        0
+      ],
+      "sweep_blocks_random": [
+        0,
+        0
+      ],
+      "stack_blocks_random": [
+        0.6,
+        0
+      ],
+      "stack_bowls_random": [
+        0,
+        0
+      ],
+      "sort_nesting_dolls_by_size_random": [
+        0,
+        0
+      ]
+    }
+  },
+  "source": "https://robodojo-benchmark.com/leaderboard?bench=sim"
+}
