@@ -1,0 +1,852 @@
+{
+  "schema_version": "robodojo-research/v1",
+  "method": "GO-3 Nano Preview",
+  "family_label": "GO-3 Preview (public launch) vs GO-3 Nano Preview (leaderboard entry)",
+  "captured_at": "2026-10-30",
+  "leaderboard_snapshot": {
+    "official_data_generated_at": "2026-10-29T14:44:43.743Z",
+    "official_news_added": "2026-10-27",
+    "benchmark": "RoboDojo-Sim",
+    "tasks_headline": 42,
+    "task_keys_exposed": 54,
+    "agent_track": [
+      {
+        "rank": 1,
+        "model": "GO-3 Nano Preview",
+        "type": "Agent + WAM",
+        "contributor": "AGIBOT",
+        "average_score": 61.9,
+        "average_success_rate": 56.42
+      },
+      {
+        "rank": 2,
+        "model": "PyRUA-Lean",
+        "type": "Agent",
+        "contributor": "PKU DAGroup",
+        "average_score": 55.26,
+        "average_success_rate": 50.35
+      },
+      {
+        "rank": 3,
+        "model": "HexaShell-Preview",
+        "type": "Agent",
+        "contributor": "HexaFuture",
+        "average_score": 53.18,
+        "average_success_rate": 46.85
+      },
+      {
+        "rank": 4,
+        "model": "WorldScape-R²SI",
+        "type": "Agent + WAM",
+        "contributor": "Manifold AI",
+        "average_score": 46.58,
+        "average_success_rate": 39.35
+      },
+      {
+        "rank": 5,
+        "model": "EmbodiedEvo",
+        "type": "Agent",
+        "contributor": "Einsia.AI",
+        "average_score": 45.08,
+        "average_success_rate": 38.95
+      },
+      {
+        "rank": 6,
+        "model": "PhysicalRSI",
+        "type": "Agent + VLA",
+        "contributor": "HKU MMLab & KAI",
+        "average_score": 36.27,
+        "average_success_rate": 31.38
+      },
+      {
+        "rank": 7,
+        "model": "GPT-6-Astra",
+        "type": "Agent",
+        "contributor": "RoboDojo Team",
+        "average_score": 28.97,
+        "average_success_rate": 22.48
+      },
+      {
+        "rank": 8,
+        "model": "DeepSeek-Flash",
+        "type": "Agent",
+        "contributor": "RoboDojo Team",
+        "average_score": 2.99,
+        "average_success_rate": 1.92,
+        "note": "10 episodes/task per official news"
+      },
+      {
+        "rank": 9,
+        "model": "GPT-5.5",
+        "type": "Agent",
+        "contributor": "RoboDojo Team",
+        "average_score": 1.13,
+        "average_success_rate": 0.88
+      }
+    ]
+  },
+  "score": {
+    "average_score": 61.9,
+    "average_success_rate_percent": 56.42,
+    "avg_without_open_score": 61.95,
+    "avg_without_open_success_rate_percent": 56.71,
+    "dimensions": {
+      "generalization": {
+        "score": 45.93,
+        "success_rate_percent": 43.0,
+        "std_score": 45.93,
+        "std_success_rate_percent": 43.0,
+        "random_score": 26.97,
+        "random_success_rate_percent": 24.33
+      },
+      "precision": {
+        "score": 78.65,
+        "success_rate_percent": 76.0
+      },
+      "long_horizon": {
+        "score": 68.21,
+        "success_rate_percent": 53.5
+      },
+      "memory": {
+        "score": 64.5,
+        "success_rate_percent": 63.67
+      },
+      "open": {
+        "score": 61.71,
+        "success_rate_percent": 55.25
+      }
+    }
+  },
+  "official_claims": {
+    "goal": "Next-generation embodied foundation model for reasoning about tasks, predicting consequences, and selecting actions; intended to adapt to changing environments and generalize beyond learned task sequences.",
+    "architecture": "WRAM (World Reasoning Action Model), described by AGIBOT as a unified reasoning/prediction/action framework.",
+    "agent_loop": "AGIBOT describes a deployment-driven data–model–robot–scenario loop: real-task feedback informs model/workflow updates. Exact online control loop, replanning cadence, and failure recovery are undisclosed.",
+    "training_self_evolution": "Physical Intelligence Scaling combines pre-training, post-training, and continuous improvement after deployment. AGIBOT separately references AGIBOT WORLD 2026, MEgo data collection, and Genie Sim 3.0; GO-3-specific data volumes, objectives, checkpoints, and optimizer details are undisclosed.",
+    "zero_few_shot": "AGIBOT reports zero-shot and few-shot demonstrations, without protocol or task list.",
+    "tools_memory": "Leaderboard classifies entry as Agent + WAM. No public GO-3 technical report or exact external tool API, memory store, prompt, retrieval, or VLA action-head specification was found. RoboDojo Memory is an evaluation dimension, not proof of a model memory module.",
+    "inputs_outputs": "Exact schema is undisclosed. Conservative inference from Agent + WAM and benchmark integration: visual/task observations plus a task instruction are mapped to robot actions; this is an inference, not an AGIBOT-published interface contract."
+  },
+  "per_task": {
+    "align_blocks": {
+      "score": 88,
+      "successRate": 88,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "arrange_largest_number": {
+      "score": 82.6,
+      "successRate": 76,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 3,
+      "rollout_fail_clips": 3,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 50.0
+    },
+    "arrange_largest_number_random": {
+      "score": 53,
+      "successRate": 48,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "build_tower": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "classify_objects": {
+      "score": 79.7,
+      "successRate": 72,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "classify_objects_by_language": {
+      "score": 74.6,
+      "successRate": 66,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "cover_blocks": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "deposit_coin": {
+      "score": 54,
+      "successRate": 48,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "fasten_screws": {
+      "score": 96.4,
+      "successRate": 94,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "fill_egg_holder": {
+      "score": 5.4,
+      "successRate": 0,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "fill_pen_holder": {
+      "score": 17.8,
+      "successRate": 4,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "fold_clothes": {
+      "score": 66.4,
+      "successRate": 60,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "fold_clothes_random": {
+      "score": 42.4,
+      "successRate": 32,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "general_pickup": {
+      "score": 16,
+      "successRate": 16,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "hang_mugs": {
+      "score": 3,
+      "successRate": 0,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "hang_mugs_random": {
+      "score": 1.2,
+      "successRate": 0,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "imitate_sorting_sequence": {
+      "score": 27,
+      "successRate": 22,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "insert_key": {
+      "score": 41.6,
+      "successRate": 32,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "insert_tubes": {
+      "score": 95.2,
+      "successRate": 92,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "make_kong": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "make_toast": {
+      "score": 3,
+      "successRate": 0,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "make_toast_random": {
+      "score": 3,
+      "successRate": 0,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "match_and_pick_from_conveyor": {
+      "score": 28,
+      "successRate": 28,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "organize_table": {
+      "score": 74,
+      "successRate": 16,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "pack_objects_into_box": {
+      "score": 8.6,
+      "successRate": 0,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "pack_objects_into_box_random": {
+      "score": 3.8,
+      "successRate": 0,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "pick_from_conveyor_by_image": {
+      "score": 0,
+      "successRate": 0,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "play_Xylophone": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "play_stacking_toy": {
+      "score": 78.4,
+      "successRate": 52,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "play_tic_tac_toe": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "plug_in_charger": {
+      "score": 70,
+      "successRate": 70,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "pour_balls_into_vase": {
+      "score": 72,
+      "successRate": 72,
+      "dimension": "precision",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "pour_by_language": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "pour_liquid_into_cup": {
+      "score": 36,
+      "successRate": 36,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "pour_liquid_into_cup_random": {
+      "score": 4,
+      "successRate": 4,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "press_by_number": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "push_T": {
+      "score": 72,
+      "successRate": 72,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "push_T_random": {
+      "score": 64,
+      "successRate": 64,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "put_bottles_into_dustbin": {
+      "score": 90.4,
+      "successRate": 84,
+      "dimension": "long_horizon",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "solve_equation": {
+      "score": 82,
+      "successRate": 82,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "sort_nesting_dolls_by_size": {
+      "score": 80,
+      "successRate": 80,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "sort_nesting_dolls_by_size_random": {
+      "score": 8,
+      "successRate": 8,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "stack_blocks": {
+      "score": 100,
+      "successRate": 100,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "stack_blocks_by_language": {
+      "score": 81.6,
+      "successRate": 80,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "stack_blocks_random": {
+      "score": 79.6,
+      "successRate": 76,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "stack_bowls": {
+      "score": 93.2,
+      "successRate": 92,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 6,
+      "rollout_fail_clips": 0,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 100.0
+    },
+    "stack_bowls_random": {
+      "score": 63,
+      "successRate": 60,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 2,
+      "rollout_fail_clips": 4,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 33.33
+    },
+    "store_laptop_and_headphones": {
+      "score": 6.4,
+      "successRate": 0,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "store_laptop_and_headphones_random": {
+      "score": 1.6,
+      "successRate": 0,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "store_tools_in_toolbox": {
+      "score": 51.5,
+      "successRate": 10,
+      "dimension": "open",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "swap_T": {
+      "score": 96,
+      "successRate": 96,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 5,
+      "rollout_fail_clips": 1,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 83.33
+    },
+    "swap_blocks": {
+      "score": 36,
+      "successRate": 36,
+      "dimension": "memory",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 4,
+      "rollout_fail_clips": 2,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 66.67
+    },
+    "sweep_blocks": {
+      "score": 0,
+      "successRate": 0,
+      "dimension": "generalization",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    },
+    "sweep_blocks_random": {
+      "score": 0,
+      "successRate": 0,
+      "dimension": "variant",
+      "rollout_manifest_clips": 6,
+      "rollout_success_clips": 0,
+      "rollout_fail_clips": 6,
+      "rollout_robot_set": [
+        "arx_x5"
+      ],
+      "rollout_sample_success_rate": 0.0
+    }
+  },
+  "rollout_manifest": {
+    "url": "https://robodojo-benchmark.com/data/rolloutManifest.generated.json",
+    "media_base": "https://media.luminis-sim.com/",
+    "entries": 54,
+    "clips_total": 324,
+    "success_clips": 156,
+    "fail_clips": 168,
+    "coverage_note": "Manifest exposes 6 clips per task, all tagged robot arx_x5. These are published rollout examples, not the denominator used to compute the leaderboard success rate."
+  },
+  "sources": [
+    {
+      "kind": "official_leaderboard",
+      "url": "https://robodojo-benchmark.com/leaderboard?bench=sim",
+      "supports": [
+        "ranking",
+        "scores",
+        "dimensions",
+        "per-task table",
+        "agent+WAM classification",
+        "news dates"
+      ]
+    },
+    {
+      "kind": "official_rollout_manifest",
+      "url": "https://robodojo-benchmark.com/data/rolloutManifest.generated.json",
+      "supports": [
+        "54 task entries",
+        "clip labels/outcomes",
+        "robot field"
+      ]
+    },
+    {
+      "kind": "official_benchmark_repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "supports": [
+        "42 simulation tasks and 18 real-world tasks",
+        "five capability dimensions",
+        "XPolicyLab integration",
+        "reproducible eval framing"
+      ]
+    },
+    {
+      "kind": "official_agibot_release",
+      "url": "https://www.agibot.com/article/231/detail/131.html",
+      "supports": [
+        "GO-3 Preview WRAM description",
+        "zero/few-shot claim",
+        "Physical Intelligence Scaling",
+        "deployment feedback loop",
+        "benchmark claims"
+      ]
+    },
+    {
+      "kind": "official_protocol",
+      "url": "https://robodojo-benchmark.com/leaderboard/protocol",
+      "supports": [
+        "official evaluation/verification/publication protocol"
+      ]
+    },
+    {
+      "kind": "official_rollout_view",
+      "url": "https://robodojo-benchmark.com/leaderboard/rollouts/GO-3%20Nano%20Preview?bench=sim",
+      "supports": [
+        "published rollout browser"
+      ]
+    }
+  ],
+  "limitations": [
+    "GO-3 Nano Preview is a preview leaderboard entry; AGIBOT release discusses GO-3 Preview and does not publish a Nano-specific technical report.",
+    "No public checkpoint, source code, exact prompt/tool/memory protocol, action dimensions, model size, training dataset mixture, or compute budget found.",
+    "Official score is a composite progress score; success rate is separately reported. Per-task score values and manifest clip outcomes should not be averaged together as an independent reproduction.",
+    "The official page headline says 42 simulation tasks while its per-task table/manifest exposes 54 keys due to random/language variants; preserve both labels."
+  ]
+}
